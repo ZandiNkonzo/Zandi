@@ -7,7 +7,7 @@ def sum_array(array):
 
 def fibonacci(n):
     '''Return nth term in fibonacci sequence'''
-    if  n<=2:
+    if  n<=1:
         return 1
     else:
         return fibonacci(n - 2) + fibonacci(n - 1)
