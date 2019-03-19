@@ -1,15 +1,16 @@
-def fibonacci(n):
-    '''Return nth term in fibonacci sequence'''
-    if  n>2:
-        return fibonacci(number - 2) + fibonacci(number - 1)
-    else:
-        return 1
 def sum_array(array):
     '''Return sum of all items in array'''
     sums=0
     for i in array:
         sums=sums+i
     return sums
+
+def fibonacci(n):
+    '''Return nth term in fibonacci sequence'''
+    if  n<=2:
+        return 1
+    else:
+        return fibonacci(n - 2) + fibonacci(n - 1)
 
 def factorial(n):
     '''Return n!'''
