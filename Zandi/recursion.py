@@ -11,17 +11,11 @@ def fibonacci(n):
         return 1
     else:
         return fibonacci(n - 2) + fibonacci(n - 1)
-
 def factorial(n):
-    '''Return n!'''
-    my_arr=[]
-    for i in range(1,n+1,1):
-        my_arr.append(i)
-    factorial=0
-    #sum_array(my_arr)
-    for k in my_arr:
-        factorial=factorial+k
-    return factorial
+    if n<=1:
+        return 1
+    else:
+        return n*factorial(n-1)
 
 def reverse(word):
     '''Return word in reverse'''
